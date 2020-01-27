@@ -1,0 +1,12 @@
+{
+    "name": "annonyme/twigtests",
+    "authors": [
+        {
+            "name": "Hannes Pries",
+            "email": "annonyme@annonyme.de"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}
