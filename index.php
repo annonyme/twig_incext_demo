@@ -91,12 +91,8 @@ final class IncTokenParser extends AbstractTokenParser {
     public function parse(Token $token)
     {       
         $stream = $this->parser->getStream();
-        $source = $stream->getSourceContext()->getName();
         $template = $stream->next()->getValue();
 
-        var_dump($source);
-
-        //$parts = preg_split("/\//i", preg_replace("/@/", '', $source));
         $newBase = findNewBase($template, $this->list, null);        
         $parent = '@' . $newBase . '/' . $template;
 
